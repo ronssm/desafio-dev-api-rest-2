@@ -5,7 +5,7 @@ import {
   PrimaryKey,
   Table,
 } from 'sequelize-typescript';
-import { Pessoa } from 'src/pessoas/entities/pessoa.entity';
+import { Pessoa } from '../../pessoas/entities/pessoa.entity';
 
 @Table({
   tableName: 'contas',

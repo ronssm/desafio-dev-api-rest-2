@@ -4,7 +4,7 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
-import { PessoasService } from 'src/pessoas/pessoas.service';
+import { PessoasService } from '../pessoas/pessoas.service';
 import { CreateContaDto } from './dto/create-conta.dto';
 import { UpdateContaDto } from './dto/update-conta.dto';
 import { Conta } from './entities/conta.entity';
