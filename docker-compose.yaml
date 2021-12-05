@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    entrypoint: npm run start:dev
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/home/node/app
+  db:
+    build: ./.docker/mysql
+    restart: always
+    tty: true
+    ports:
+      - 3306:3306
+    volumes:
+      - ./.docker/dbdata:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=cdtbass
+      - MYSQL_ROOT_PASSWORD=root

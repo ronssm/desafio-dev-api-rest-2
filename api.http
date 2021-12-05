@@ -1,0 +1,81 @@
+### GET ALL PESSOAS
+GET http://localhost:3000/pessoas
+
+### GET PESSOA BY ID
+GET http://localhost:3000/pessoas/1
+
+### CREATE PESSOA
+POST http://localhost:3000/pessoas
+Content-Type: application/json
+
+{
+  "nome": "joao",
+  "cpf": "1234",
+  "dataNascimento": "19860129"
+}
+
+### UPDATE PESSOA
+PATCH http://localhost:3000/pessoas/1
+Content-Type: application/json
+
+{
+  "nome": "pedro",
+  "cpf": "2222",
+  "dataNascimento": "19990101"
+}
+
+### DELETE PESSOA
+DELETE http://localhost:3000/pessoas/2
+
+### GET ALL CONTAS
+GET http://localhost:3000/contas
+
+### GET CONTA BY ID
+GET http://localhost:3000/contas/2
+
+### CREATE CONTA
+POST http://localhost:3000/contas
+Content-Type: application/json
+
+{
+  "idPessoa": 1,
+  "saldo": 0,
+  "limiteSaqueDiario": 10,
+  "flagAtivo": 1,
+  "tipoConta": 1,
+  "dataCriacao": "20211201"
+}
+
+### UPDATE CONTA
+PATCH http://localhost:3000/contas/1
+Content-Type: application/json
+
+{
+  "saldo": 3110.97,
+  "flagAtivo": 1
+}
+
+### DELETE CONTA
+DELETE http://localhost:3000/contas/1
+
+### CONSULTA SALDO
+GET http://localhost:3000/contas/1/saldo
+
+### DEPOSITAR
+POST http://localhost:3000/contas/1/depositar
+Content-Type: application/json
+
+{
+  "valor": 10.97
+}
+
+### SACAR
+POST http://localhost:3000/contas/1/sacar
+Content-Type: application/json
+
+{
+  "valor": 10.00
+}
+
+### EXTRATO POR PERIODO
+GET http://localhost:3000/contas/1/extrato?de=20211201&ate=20211207
