@@ -1,6 +1,6 @@
-Para executar o projeto, acesso o diretório raiz que contém o arquivo docker-compose.yaml e execute o comando docker-compose up
-Serão criados container para a aplicação e para o banco de dados mysql.
-Após iniciar, as tabelas do sistema serão criadas automaticamente.
+Para executar o projeto, acesse o diretório raiz que contém o arquivo docker-compose.yaml e execute o comando docker-compose up
+Serão criados containers para a aplicação e para o banco de dados mysql.
+Após inicialização dos containers, as tabelas do sistema serão criadas automaticamente.
 
 Fluxo Básico de execução:
 
@@ -55,3 +55,6 @@ Content-Type: application/json
 
 
   Todos os Endpoints estão listados na URL http://localhost:3000/api/, utilizando OpenAPI.
+  
+  
+  
