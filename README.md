@@ -1,4 +1,5 @@
-Para executar o projeto, acesse o diretório raiz que contém o arquivo docker-compose.yaml e execute o comando docker-compose up;
+Para executar o projeto, acesse o diretório raiz que contém o arquivo docker-compose.yaml e execute o comando npm install para baixar as dependências e em seguida o comando docker-compose up;
+Lembrando que as configurações do projeto foram feitas considerando que é apenas um ambiente de desenvolvimento.
 
 Serão criados containers para a aplicação e para o banco de dados mysql;
 
@@ -68,6 +69,8 @@ Content-Type: application/json
 
 
   Todos os Endpoints estão listados na URL http://localhost:3000/api/, utilizando OpenAPI.
+
+  Os testes automatizados podem ser executados através do comando npm run test:e2e
   
   
   

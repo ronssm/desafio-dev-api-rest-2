@@ -9,7 +9,7 @@ import { PessoasModule } from './pessoas/pessoas.module';
   imports: [
     SequelizeModule.forRoot({
       dialect: 'mysql',
-      host: 'db',
+      host: 'localhost',
       port: 3306,
       database: 'cdtbass',
       username: 'root',
